@@ -12,8 +12,8 @@ const Dashboard = () => {
       <Head>
         <title>Dashboard</title>
       </Head>
-      <div className="flex min-h-screen bg-gray-100">
-        <aside className="w-64 bg-white p-5">
+      <div className="flex min-h-screen bg-gray-100 ">
+        <aside className="w-64 bg-gray-100 p-5 border-solid border-2 ">
           <button onClick={() => setActiveTab('avaliacoes')}  className="transition-colors duration-300 py-2 px-4 w-full text-left hover:bg-gray-200">
             Clientes
           </button>
