@@ -29,7 +29,7 @@ const ClientesComponent = () => {
     <div className="space-y-4">
       {clientes.map(clientes => (
         <div key={clientes.id} className="bg-white p-4 shadow rounded-lg">
-          <div className="font-bold text-lg">Cliente: #{clientes.id} </div>
+          <div className="font-bold text-lg">Cliente: {clientes.nome} </div>
           <p>nome: {clientes.nome} / 5</p>
           <p>veiculo: {clientes.veiculo}</p>
           <p>numero: {clientes.numero}</p>

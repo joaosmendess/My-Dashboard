@@ -8,6 +8,7 @@ interface Avaliacao {
   id_servico: number;
   classificacao: number;
   comentario: string;
+  
 }
 
 const AvaliacoesList = () => {
@@ -34,6 +35,9 @@ const AvaliacoesList = () => {
           <div className="font-bold text-lg">Avaliação #{avaliacao.id}</div>
           <p>Classificação: {avaliacao.classificacao} / 5</p>
           <p>Comentário: {avaliacao.comentario}</p>
+         
+
+
       
         </div>
       ))}
