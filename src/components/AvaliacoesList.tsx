@@ -17,7 +17,7 @@ const AvaliacoesList = () => {
   useEffect(() => {
     const fetchAvaliacoes = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/avaliacoes');
+        const response = await fetch('https://opine-back.onrender.com/api/avaliacoes');
         const data = await response.json();
         setAvaliacoes(data);
       } catch (error) {

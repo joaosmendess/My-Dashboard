@@ -14,7 +14,7 @@ const ClientesComponent = () => {
   useEffect(() => {
     const fetchAvaliacoes = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/clientes');
+        const response = await fetch('https://opine-back.onrender.com/api/clientes');
         const data = await response.json();
         setClientes(data);
       } catch (error) {
@@ -30,7 +30,7 @@ const ClientesComponent = () => {
       {clientes.map(clientes => (
         <div key={clientes.id} className="bg-white p-4 shadow rounded-lg">
           <div className="font-bold text-lg">Cliente: {clientes.nome} </div>
-          <p>nome: {clientes.nome} / 5</p>
+          <p>nome: {clientes.nome} </p>
           <p>veiculo: {clientes.veiculo}</p>
           <p>numero: {clientes.numero}</p>
 
